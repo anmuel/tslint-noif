@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/anmuel/tslint-if"
+    "url": "https://github.com/anmuel/tslint-noif"
   },
   "keywords": [
     "tslint",
@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@types/typescript": "^2.0.0",
+    "@types/typescript": "^2.1.4",
     "tslint": "^4.3.1",
     "typescript": "^2.1.5"
   }
