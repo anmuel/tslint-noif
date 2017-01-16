@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@types/typescript": "^2.1.4",
+    "@types/typescript": "^2.0.0",
     "tslint": "^4.3.1",
     "typescript": "^2.1.5"
   }
