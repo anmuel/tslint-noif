@@ -1,0 +1,34 @@
+{
+  "name": "tslint-noif",
+  "version": "0.0.1",
+  "description": "A tslint-plugin for rules regarding if/else constructions",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint src/**/*.ts",
+    "test": "npm run build && scripts/verify.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anmuel/tslint-if"
+  },
+  "keywords": [
+    "tslint",
+    "lint",
+    "if",
+    "else",
+    "control",
+    "switch",
+    "case"
+  ],
+  "author": {
+    "name": "Andreas Müller",
+    "email": "anmuel86@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/typescript": "^2.0.0",
+    "tslint": "^4.3.1",
+    "typescript": "^2.1.5"
+  }
+}
