@@ -1,4 +1,4 @@
-# tslint-if [![Build Status](https://travis-ci.org/anmuel/tslint-noif.svg?branch=master)](https://travis-ci.org/anmuel/tslint-noif)
+# tslint-noif [![Build Status](https://travis-ci.org/anmuel/tslint-noif.svg?branch=master)](https://travis-ci.org/anmuel/tslint-noif)
 
 A tslint rule extension to prohibit the usage of `if`-statements.
 It's a bit radical I guess :)
