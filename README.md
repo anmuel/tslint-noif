@@ -1,5 +1,7 @@
 # tslint-noif [![Build Status](https://travis-ci.org/anmuel/tslint-noif.svg?branch=master)](https://travis-ci.org/anmuel/tslint-noif)
 
+ [![NPM](https://nodei.co/npm/tslint-noif.png?compact=true)](https://npmjs.com/package/tslint-noif)
+
 A tslint rule extension to prohibit the usage of conditional statements such as `if` or `switch`.
 It's a bit radical I guess :)
 
