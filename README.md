@@ -1,6 +1,6 @@
 # tslint-noif [![Build Status](https://travis-ci.org/anmuel/tslint-noif.svg?branch=master)](https://travis-ci.org/anmuel/tslint-noif)
 
-A tslint rule extension to prohibit the usage of `if`-statements.
+A tslint rule extension to prohibit the usage of conditional statements such as `if` or `switch`.
 It's a bit radical I guess :)
 
 ## Usage
@@ -10,15 +10,24 @@ It's a bit radical I guess :)
 Apply the rules directory for tslint for example via the command line:
 `tslint --rule-dir node_modules/tslint-noif`
 
+Use the desired rules in your *tslint.json*:
+
+```json
+{
+  "rules": {
+    "no-if": true,
+    "no-switch": true
+  }
+}
+```
+
 ## Test
 
 Run `npm test`
 
 ## Todos
 
-* Add options such as the amount of allowed else-cases
-* Disallow switch
-* Add options to switch based on the amount of cases
+See [Issues](https://github.com/anmuel/tslint-noif/issues)
 
 ## References
 
