@@ -4,7 +4,8 @@
   "description": "A tslint-plugin for rules regarding if/else constructions",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npm install && npm run compile",
+    "compile": "tsc",
     "lint": "tslint src/**/*.ts",
     "test": "npm run build && scripts/verify.sh"
   },
