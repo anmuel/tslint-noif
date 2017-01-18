@@ -1,0 +1,8 @@
+switch (x) {
+~~~~~~ [The usage of switch-statements is discouraged.]
+  case 5:
+    console.log("it's 5!");
+    break;
+  default:
+    console.log("default");
+}
