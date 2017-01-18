@@ -1,1 +1,1 @@
-export { Rule as NoIfRule } from "./no-if/noIfRule";
+export { Rule as NoIfRule } from "./rules/noIfRule";
