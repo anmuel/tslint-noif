@@ -9,6 +9,9 @@
     "lint": "tslint src/**/*.ts",
     "test": "npm run build && scripts/verify.sh"
   },
+  "bugs": {
+    "url": "https://github.com/anmuel/tslint-nof/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/anmuel/tslint-noif"
