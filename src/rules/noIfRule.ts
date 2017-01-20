@@ -1,14 +1,10 @@
-import {
-  RuleFailure,
-  Rules,
-} from "tslint";
-import { IfStatement, SourceFile } from "typescript";
+import { SourceFile } from "typescript";
 
+import { BasicRule } from "../basicRule"
 import { NoIfWalker } from "../walkers/noIfWalker";
 
-export class Rule extends Rules.AbstractRule {
-  public apply(sourceFile: SourceFile): RuleFailure[] {
-    const walker = new NoIfWalker(sourceFile, this.getOptions());
-    return this.applyWithWalker(walker);
+export class Rule extends BasicRule {
+  public createWalker(sourceFile: SourceFile) {
+    return new NoIfWalker(sourceFile, this.getOptions());
   }
 }

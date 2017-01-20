@@ -1,14 +1,10 @@
-import {
-  RuleFailure,
-  Rules,
-} from "tslint";
-import { SourceFile, SwitchStatement } from "typescript";
+import { SourceFile } from "typescript";
 
+import { BasicRule } from "../basicRule";
 import { NoSwitchWalker } from "../walkers/noSwitchWalker";
 
-export class Rule extends Rules.AbstractRule {
-  public apply(sourceFile: SourceFile): RuleFailure[] {
-    const walker = new NoSwitchWalker(sourceFile, this.getOptions());
-    return this.applyWithWalker(walker);
+export class Rule extends BasicRule {
+  protected createWalker(sourceFile: SourceFile) {
+    return new NoSwitchWalker(sourceFile, this.getOptions());
   }
 }
