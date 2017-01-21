@@ -11,7 +11,7 @@
     "test": "npm run build && scripts/verify.sh"
   },
   "bugs": {
-    "url": "https://github.com/anmuel/tslint-nof/issues"
+    "url": "https://github.com/anmuel/tslint-noif/issues"
   },
   "repository": {
     "type": "git",
