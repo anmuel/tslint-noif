@@ -5,7 +5,7 @@
   "main": "tslint-noif.json",
   "scripts": {
     "build": "npm install && npm run clean && npm run compile",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf build",
     "compile": "tsc -p ./",
     "lint": "tslint 'src/**/*.ts'",
     "test": "npm run build && scripts/verify.sh"
