@@ -1,12 +1,13 @@
 {
   "name": "tslint-noif",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tslint-plugin for rules regarding if/else constructions",
-  "main": "dist/index.js",
+  "main": "tslint-noif.json",
   "scripts": {
-    "build": "npm install && npm run compile",
-    "compile": "tsc",
-    "lint": "tslint src/**/*.ts",
+    "build": "npm install && npm run clean && npm run compile",
+    "clean": "rm -rf dist",
+    "compile": "tsc -p ./",
+    "lint": "tslint 'src/**/*.ts'",
     "test": "npm run build && scripts/verify.sh"
   },
   "bugs": {

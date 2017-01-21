@@ -1,0 +1,7 @@
+{
+    "rulesDirectory": "./rules",
+    "rules": {
+        "no-if": true,
+        "no-switch": true
+    }
+}
