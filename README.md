@@ -7,15 +7,13 @@ It's a bit radical I guess :)
 
 ## Usage
 
-`npm install tslint-noif`
+`npm install tslint-noif --save-dev`
 
-Apply the rules directory for tslint for example via the command line:
-`tslint --rule-dir node_modules/tslint-noif`
-
-Use the desired rules in your *tslint.json*:
+Use the desired rules in your **tslint.json**:
 
 ```json
 {
+  "extends": ["tslint:recommended", "tslint-noif"],
   "rules": {
     "no-if": true,
     "no-switch": true
