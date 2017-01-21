@@ -1,6 +1,6 @@
 {
   "name": "tslint-noif",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A tslint-plugin for rules regarding if/else constructions",
   "main": "tslint-noif.json",
   "scripts": {
@@ -32,8 +32,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@types/typescript": "^2.0.0",
     "tslint": "^4.3.1",
     "typescript": "^2.1.5"
+  },
+  "devDependencies": {
+    "@types/typescript": "^2.0.0"
   }
 }
