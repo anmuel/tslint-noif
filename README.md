@@ -7,7 +7,7 @@ It's a bit radical I guess :)
 
 ## Usage
 
-`npm install tslint-noif --save-dev`
+`npm install tslint-noir --save-dev`
 
 Use the desired rules in your **tslint.json**:
 
