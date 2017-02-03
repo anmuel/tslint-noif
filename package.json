@@ -33,10 +33,10 @@
   "license": "MIT",
   "dependencies": {
     "dasherize": "^2.0.0",
-    "tslint": "^4.3",
-    "typescript": "^2.1"
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.5"
   },
   "devDependencies": {
-    "@types/typescript": "^2.0"
+    "@types/typescript": "^2.0.0"
   }
 }
