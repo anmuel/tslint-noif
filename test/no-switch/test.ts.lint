@@ -1,5 +1,5 @@
 switch (x) {
-~~~~~~ [The usage of switch-statements is discouraged.]
+~~~~~~ [The usage of switch is discouraged.]
   case 5:
     console.log("it's 5!");
     break;

@@ -32,6 +32,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "dasherize": "^2.0.0",
     "tslint": "^4.3",
     "typescript": "^2.1"
   },
