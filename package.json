@@ -1,6 +1,6 @@
 {
   "name": "tslint-noif",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tslint-plugin for rules regarding if/else constructions",
   "main": "tslint-noif.json",
   "scripts": {
