@@ -2,6 +2,7 @@
     "rulesDirectory": "./build/rules",
     "rules": {
         "no-if": true,
-        "no-switch": true
+        "no-switch": true,
+        "no-static": true
     }
 }
