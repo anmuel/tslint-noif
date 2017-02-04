@@ -1,7 +1,7 @@
 import { IfStatement } from "typescript";
 
+import { Keyword } from "../keyword";
 import { BasicWalker } from "./basicWalker";
-import { Keyword } from "./keyword";
 
 export class NoIfWalker extends BasicWalker {
   public visitIfStatement(node: IfStatement) {

@@ -5,7 +5,7 @@ export interface IKeyword {
   kind: SyntaxKind;
   getStart(): number;
   getName(): string;
-  getKeywordLength(): number,
+  getKeywordLength(): number;
 }
 
 export class Keyword implements IKeyword {

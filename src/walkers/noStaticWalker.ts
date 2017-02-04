@@ -8,8 +8,8 @@ import {
    SyntaxKind,
  } from "typescript";
 
+import { Keyword } from "../keyword";
 import { BasicWalker } from "./basicWalker";
-import { Keyword } from "./keyword";
 
 export class NoStaticWalker extends BasicWalker {
 

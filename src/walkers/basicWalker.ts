@@ -1,7 +1,7 @@
 import { IOptions, RuleWalker } from "tslint";
 import { SourceFile, SyntaxKind} from "typescript";
 
-import { IKeyword } from "./keyword";
+import { IKeyword } from "../keyword";
 
 export class BasicWalker extends RuleWalker {
   protected addKeywordFailure(node: IKeyword) {

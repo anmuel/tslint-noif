@@ -1,7 +1,7 @@
 import { SwitchStatement } from "typescript";
 
+import { Keyword } from "../keyword";
 import { BasicWalker } from "./basicWalker";
-import { Keyword } from "./keyword";
 
 export class NoSwitchWalker extends BasicWalker {
   public visitSwitchStatement(node: SwitchStatement) {
