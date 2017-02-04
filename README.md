@@ -16,6 +16,7 @@ Use the desired rules in your **tslint.json**:
   "extends": ["tslint:recommended", "tslint-noif"],
   "rules": {
     "no-if": true,
+    "no-static": true,
     "no-switch": true
   }
 }

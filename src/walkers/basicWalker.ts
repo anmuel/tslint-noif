@@ -1,15 +1,14 @@
 import { IOptions, RuleWalker } from "tslint";
-import { SourceFile, Statement, SyntaxKind} from "typescript";
+import { SourceFile, SyntaxKind} from "typescript";
+
+import { IKeyword } from "./keyword";
 
 export class BasicWalker extends RuleWalker {
-  protected addKeywordFailure(node: Statement) {
-    const statementName = SyntaxKind[node.kind].split("Statement")[0];
-    const keywordName = statementName.toLowerCase();
-    const keywordLength = keywordName.length;
-    const message = `The usage of ${keywordName}-statements is discouraged.`;
+  protected addKeywordFailure(node: IKeyword) {
+    const message = `The usage of ${node.getName()} is discouraged.`;
     const failure = this.createFailure(
       node.getStart(),
-      keywordLength,
+      node.getKeywordLength(),
       message,
     );
     this.addFailure(failure);

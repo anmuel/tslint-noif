@@ -1,0 +1,14 @@
+class NoStaticTest {
+  public static staticMethod(arg: number): void {
+         ~~~~~~[The usage of static is discouraged.]
+  }
+
+  public static staticAttribute = 5;
+         ~~~~~~[The usage of static is discouraged.]
+
+  public static get getter() { return 0; }
+         ~~~~~~[The usage of static is discouraged.]
+
+  public static set setter() {}
+         ~~~~~~[The usage of static is discouraged.]
+}

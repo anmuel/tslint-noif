@@ -1,5 +1,5 @@
 function x(i) {
   if (i === 5) {
-  ~~ [The usage of if-statements is discouraged.]
+  ~~ [The usage of if is discouraged.]
   }
 }
