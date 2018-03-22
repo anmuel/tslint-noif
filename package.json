@@ -4,11 +4,14 @@
   "description": "A tslint-plugin for rules regarding if/else constructions",
   "main": "tslint-noif.json",
   "scripts": {
-    "build": "npm install && npm run clean && npm run compile",
-    "clean": "rm -rf build",
+    "build": "yarn install && npm run clean && npm run compile",
+    "clean": "rimraf build",
     "compile": "tsc -p ./",
     "lint": "tslint 'src/**/*.ts'",
-    "test": "npm run build && scripts/verify.sh"
+    "test": "npm run build && scripts/verify.sh",
+    "precommit": "yarn run lint",
+    "prepush": "yarn run test",
+    "prepublishOnly": "pgk-ok"
   },
   "bugs": {
     "url": "https://github.com/anmuel/tslint-noif/issues"
@@ -33,10 +36,14 @@
   "license": "MIT",
   "dependencies": {
     "dasherize": "^2.0.0",
-    "tslint": "^4.4.2",
-    "typescript": "^2.1.5"
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
   },
   "devDependencies": {
-    "@types/typescript": "^2.0.0"
+    "@types/node": "6",
+    "@types/typescript": "^2.0.0",
+    "husky": "^0.14.3",
+    "pkg-ok": "^2.1.0",
+    "rimraf": "^2.6.2"
   }
 }

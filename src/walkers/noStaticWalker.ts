@@ -1,4 +1,4 @@
-import { 
+import {
    ElementAccessExpression,
    GetAccessorDeclaration,
    MethodDeclaration,

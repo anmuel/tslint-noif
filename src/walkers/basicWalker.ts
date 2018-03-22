@@ -1,5 +1,5 @@
 import { IOptions, RuleWalker } from "tslint";
-import { SourceFile, SyntaxKind} from "typescript";
+import { SourceFile, SyntaxKind } from "typescript";
 
 import { IKeyword } from "../keyword";
 
